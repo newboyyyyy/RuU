@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/css/register.css">
+    <script src='/js/register.js'></script>
+    <style>
+
+    </style>
+</head>
+
+<form action="/login" method="post" style="margin-top:10%;">
+    <div class="basic-grey">
+        <h1>登入
+            <span>請輸入Email及密碼</span>
+        </h1>
+        <label>
+            <span> Email :</span>
+            <input id="email" type="email" name="email" placeholder="請輸入您的 E-mail 帳號" />
+        </label>
+        <label>
+            <span>密碼 :</span>
+            <input id="password" type="password" name="password" placeholder="請輸入您的密碼" />
+        </label>
+
+        <label style="margin-right: 50px;">
+            <span>&nbsp;</span>
+            <input type="button" class="button2" value="註冊" onclick="goRegister()" />
+            <span>&nbsp;</span>
+            <button type="submit" class="button1">送出</button>
+
+        </label>
+        <label>
+
+        </label>
+    </div>
+</form>
+<script>
+    function goRegister() {
+        window.location = "[[@{/register}]]";
+    }
+</script>
+
+</html>
